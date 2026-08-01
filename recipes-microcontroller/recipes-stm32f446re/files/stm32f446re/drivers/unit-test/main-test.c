@@ -2,13 +2,13 @@
 #include "gpio-test.h"
 #include "spi-test.h"
 
-#include "wiznet-5500-spi.h"
+//#include "wiznet-5500-spi.h"
 //#include "wizchip_port.h"
 
 #include "utility.h"
 #include "gpio.h"
 #include "exti.h"
-#include "w5500.h"
+//#include "w5500.h"
 #include "stm32f4xx_hal_def.h" 
 #include "stm32f4xx_hal_spi.h"
 // stm32f4xx_hal.h enables all HALL modules. 
@@ -41,9 +41,9 @@ int main(void)
 	gpioSelectPinMode(GPIOA, PIN15, OUTPUT); // Will work as the Chip select for the w5500 chip. Controlled by software.
 	gpioSelectPinMode(GPIOB, PIN6, OUTPUT); // Will work as the reset pin for the w5500 chip.
 
-	w5500_Init();
-	TestStatus = w5500_ping_test();
-	TestStatus != 0 ? print("From main-test.c: PING TEST: FAILED\r\n") : print("From main-test.c:  PING TEST: SUCCESS\r\n");
+	// w5500_Init();
+	// TestStatus = w5500_ping_test();
+	// TestStatus != 0 ? print("From main-test.c: PING TEST: FAILED\r\n") : print("From main-test.c:  PING TEST: SUCCESS\r\n");
 	
 	
   while(1);

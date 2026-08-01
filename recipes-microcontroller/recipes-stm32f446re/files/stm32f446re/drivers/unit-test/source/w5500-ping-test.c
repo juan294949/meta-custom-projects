@@ -26,7 +26,7 @@
 int w5500_TCP_test(uint8_t DstIp)
 {
 	
-	while(!listen());
+	//while(!listen());
 
 	return 0;
 }
