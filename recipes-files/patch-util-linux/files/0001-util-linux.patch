@@ -1,0 +1,16 @@
+From 
+From: Your Name <you@example.com>
+Date: 
+Subject: [PATCH] app: Change greeting
+
+---
+ lsfd.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/misc-utils/lsfd.c b/misc-utils/lsfd.c
+index 1234567..89abcde 100644
+--- a/misc-utils/lsfd.c
++++ b/misc-utils/lsfd.c
+@@ -1572,1 +1572,1 @@
+-			if (bsearch(&(struct pollfd){.fd = fd,}, local.iov_base,
++			if (bsearch(&(struct pollfd){.fd = fd}, local.iov_base,
